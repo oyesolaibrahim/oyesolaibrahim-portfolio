@@ -85,7 +85,11 @@ const Contact = () => {
         setTimesOpen(true) 
         setSettingsClose(false)
     }
-
+    const form = document.querySelector("#form")
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbweO9bIkKpG_4we13g1uFOPrdcJgrriZJwdnB6CwW0pYlM7Atm73oKrrrXJHM0dxXRi3w/exec'
+    const submitButton = document.querySelector("#submit")
+    const Message = document.getElementById("msgDelivered")
+ 
     const handleSubmit = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -200,7 +204,7 @@ const Contact = () => {
                             <p>I am very responsive to messages</p>
                         </diV>
                         <div>
-                            <form id="form">
+                            <form id="form" onSubmit={handleSubmit}>
                             <div className="flex first-child">
                               <div className="label">
                                     <label for="name">
