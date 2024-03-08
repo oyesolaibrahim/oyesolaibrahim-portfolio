@@ -831,6 +831,11 @@ div.center {
     font-size: 2rem;
   }
 }
+@media screen and (max-width:370px) {
+  .layer {
+    bottom: 24%;
+  }
+}
 @media screen and (max-width:345px) {
  main {
   padding: 10px;
