@@ -86,6 +86,35 @@ const Contact = () => {
         setSettingsClose(false)
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const scriptURL =
+          'https://script.google.com/macros/s/AKfycbweO9bIkKpG_4we13g1uFOPrdcJgrriZJwdnB6CwW0pYlM7Atm73oKrrrXJHM0dxXRi3w/exec';
+        const submitButton = form.querySelector("#submit");
+    
+        submitButton.disabled = true;
+    
+        const responseBody = new FormData(form);
+        const TrendBody = responseBody.getAll("TRENDS").join(" ");
+        responseBody.set('TRENDS', TrendBody);
+    
+        fetch(scriptURL, { method: 'POST', body: responseBody })
+          .then((response) => {
+            Message.innerHTML = 'Message sent successfully!!!';
+            setTimeout(function () {
+              Message.innerHTML = '';
+            }, 5000);
+            form.reset();
+            submitButton.disabled = false;
+          })
+          .catch((error) => {
+            alert('Error!', error.message);
+            submitButton.disabled = false;
+          });
+      };
+    
+    
 
     return (
         
