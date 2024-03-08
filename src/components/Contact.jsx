@@ -10,6 +10,7 @@ const Contact = () => {
     const [themeDivOpen, setThemeDivOpen] = useState(false);
     const [settingsClose, setSettingsClose] = useState(false);
     const [timesOpen, setTimesOpen] = useState(true);
+    const [msgDelivered, setMsgDelivered] = useState("");
 
 
     const Red = () => {  
@@ -85,39 +86,37 @@ const Contact = () => {
         setTimesOpen(true) 
         setSettingsClose(false)
     }
-    const form = document.querySelector("#form")
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbweO9bIkKpG_4we13g1uFOPrdcJgrriZJwdnB6CwW0pYlM7Atm73oKrrrXJHM0dxXRi3w/exec'
-    const submitButton = document.querySelector("#submit")
-    const Message = document.getElementById("msgDelivered")
- 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const form = e.target;
         const scriptURL =
           'https://script.google.com/macros/s/AKfycbweO9bIkKpG_4we13g1uFOPrdcJgrriZJwdnB6CwW0pYlM7Atm73oKrrrXJHM0dxXRi3w/exec';
-        const submitButton = form.querySelector("#submit");
     
-        submitButton.disabled = true;
+        try {
+          const responseBody = new FormData(form);
+          const TrendBody = responseBody.getAll("TRENDS").join(" ");
+          responseBody.set('TRENDS', TrendBody);
     
-        const responseBody = new FormData(form);
-        const TrendBody = responseBody.getAll("TRENDS").join(" ");
-        responseBody.set('TRENDS', TrendBody);
+          const response = await fetch(scriptURL, {
+            method: 'POST',
+            body: responseBody,
+          });
     
-        fetch(scriptURL, { method: 'POST', body: responseBody })
-          .then((response) => {
-            Message.innerHTML = 'Message sent successfully!!!';
-            setTimeout(function () {
-              Message.innerHTML = '';
+          if (response.ok) {
+            setMsgDelivered('Message sent successfully!!!');
+            setTimeout(() => {
+              setMsgDelivered('');
             }, 5000);
             form.reset();
-            submitButton.disabled = false;
-          })
-          .catch((error) => {
-            alert('Error!', error.message);
-            submitButton.disabled = false;
-          });
+          } else {
+            throw new Error('Failed to send message');
+          }
+        } catch (error) {
+          console.error('Error sending message:', error);
+        }
       };
     
+        
     
 
     return (
@@ -229,7 +228,9 @@ const Contact = () => {
                                 </div>
                                 <button style={{backgroundColor: theme.h3BackgroundColor }} className="send" id="submit">Send</button>
                             </form>
-                            <span id="msgDelivered" className="center"></span>
+                            <span id="msgDelivered" className="center">
+                            {msgDelivered}
+                            </span>
                         </div>
                     </div>
                     
