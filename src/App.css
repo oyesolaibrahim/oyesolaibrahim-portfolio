@@ -574,6 +574,7 @@ div.center {
     display: none;
   }
   main {
+    overflow: hidden;
     position: relative;
     left: -11%;
     width: 100%;
@@ -584,6 +585,9 @@ div.center {
     width: 100%;
     position: fixed;
     top: 79.6%;
+  }
+  .nav2 * {
+    overflow: hidden;
   }
   .nav2 {
     overflow-y: hidden;
