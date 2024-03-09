@@ -590,6 +590,7 @@ div.center {
     overflow: hidden;
   }
   .nav2 {
+    z-index: 5;
     overflow-y: hidden;
     justify-content: space-between;
     display: flex;
