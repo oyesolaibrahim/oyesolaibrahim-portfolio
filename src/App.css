@@ -586,6 +586,7 @@ div.center {
     top: 79.6%;
   }
   .nav2 {
+    overflow-y: hidden;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;

@@ -191,7 +191,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3>CSS</h3>
+                                    <h3>CSS/SASS</h3>
                                     <div id="css-level" style={{ backgroundColor: theme.technologiesBackgroundColor, border: theme.technologiesBorder}}>
                                         <div id="css-percentage" style={{backgroundColor: theme.technologiesPercentagesBackgroundColor}}></div>
                                     </div>
