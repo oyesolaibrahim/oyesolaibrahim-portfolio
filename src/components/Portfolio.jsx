@@ -16,7 +16,7 @@ const Portfolio = () => {
     const Red = () => {  
         changeTheme({
         mainBackgroundColor: '#ff3800',
-        navBackgroundColor: 'rgba(255, 56, 0, 0.7)',
+        navBackgroundColor: 'rgba(255, 150, 100)',
         buttonBackgroundColor: '#155263',
         spanBackgroundColor: '#155263',
         navDivbackgroundColor: 'rgb(255, 100, 50)',
@@ -109,7 +109,7 @@ return (
                 </div>
             </nav>
          	<div id="vertical-line"></div>
-	<main style={{backgroundColor: theme.mainBackgroundColor }} id="portfolio">
+	<main style={{backgroundColor: theme.mainBackgroundColor }} className="main-portfolio" id="portfolio">
         <header className="flex">
             <div className="header-div">
                 <h1>Portfolio</h1>

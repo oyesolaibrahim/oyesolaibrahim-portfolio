@@ -5,9 +5,10 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState({
-    // Define your initial theme here
+//      mainBackgroundColor: '#ff3800',
       mainBackgroundColor: '#ff3800',
-      navBackgroundColor: 'rgba(255, 56, 0, 0.7)',
+      navBackgroundColor: 'rgba(255, 150, 100)',
+//      navBackgroundColor: 'rgba(255, 56, 0, 0.7)',
       buttonBackgroundColor: '#155263',
       spanBackgroundColor: '#155263',
       navDivbackgroundColor: 'rgb(255, 100, 50)',
@@ -17,7 +18,6 @@ export const ThemeProvider = ({ children }) => {
       technologiesPercentagesBorder: '1px solid #ff3800',
       h3BackgroundColor: '#155263',
       labelsBackgroundColor: 'rgb(255, 100, 50)',
-    // ... other theme properties
   });
 
   const changeTheme = (newTheme) => {

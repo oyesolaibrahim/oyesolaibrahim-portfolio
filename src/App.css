@@ -57,7 +57,7 @@ body {
 }
 /*---Navigation--*/
 .nav {
-  background-color: rgba(255, 56, 0, 0.7);
+  background-color: rgba(255, 150, 100);
   position: fixed;
   top: 0px;
   height: 100vh;
@@ -91,7 +91,7 @@ body {
 /*---------------main-------------*/
 main {
   margin-left: 11%;
-  background-color: #ff3800;
+ background-color: #ff3800;
   position: absolute;
   top : 0px;
   left: 9%;
@@ -119,7 +119,7 @@ a, li {
   justify-content: space-around;
   background-color: white;
   position: fixed;
-  right: -150px;
+  right: -200px;
   top: 12%;
   width: 150px;
   height: 10vh;
@@ -137,22 +137,6 @@ font-size: 0rem;
 .theme-div * {
   margin: 5px;
   cursor: pointer;
-}
-#nav {
-  background-color: #d9b650;
-  & * {
-  
-  &:hover {
-    background-color: #83580b;
-    width: 70%;
-  }
-}  
-}
-#span {
-  color: #00C7FF;
-}
-#button {
-  background-color: #00C7FF;
 }
 .color-selecion {
   border: 1px solid #ff3800;
@@ -485,9 +469,6 @@ article.portfolio img {
   width: 50px;
   height: 50px;
 }
-article.portfolio:hover img {
-  /*transform: scale(1.1);*/
-}
 article.portfolio:hover .layer {
   height: 50vh;
 }
@@ -568,7 +549,9 @@ div.center {
   }
  }
 @media screen and (max-width:1200px) {
- 
+ main {
+  padding-bottom: 150px;
+ }
 .theme-div {
   width: 150px;
 } 
@@ -599,26 +582,20 @@ div.center {
   #horizontal-line {
     border: 1px solid white;
     width: 100%;
-    position: absolute;
-    bottom: 0.1%;
+    position: fixed;
+    top: 79.6%;
   }
   .nav2 {
-   /* background-color: rgba(255, 56, 0, 0.7);
-    */background-color: rgba(255, 56, 0, 0.7);
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 80%;
     width: 100%;
-    /*padding-top: 41px;
-    padding-bottom: 30px;
-*/
   }
   .nav2 div {
     margin: 20px 20px;
-   /* background-color:rgb(255, 100, 50);
-    */background-color:rgb(255, 100, 50);
+    background-color:rgb(255, 100, 50);
     padding: 20px 30px;
     border-radius: 10px;
   }
@@ -678,7 +655,12 @@ div.center {
     height: 0vh;
     left: 5%;
   }
-  
+  .nav2 div {
+    margin: 20px 10px;
+    background-color:rgb(255, 100, 50);
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
 }
 @media screen and (max-width:630px){
 
@@ -736,9 +718,6 @@ div.center {
     margin: 20px 10px;
     padding: 20px 30px;
   }
-  main#portfolio {
-    padding: 20px;
-  }
   article.portfolio img {
     max-width: 80%;
     min-width: 80%;
@@ -774,7 +753,15 @@ div.center {
     height: 30px;
     margin-top: 5px;
   }
-}
+} @media screen and (max-width:590px) {
+
+  .nav2 div {
+    margin: 10px 2px;
+    background-color:rgb(255, 100, 50);
+    padding: 25px;
+    border-radius: 10px;
+  }
+  }
 @media screen and (max-width:571px) {
 
   .layer {
