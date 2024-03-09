@@ -817,7 +817,7 @@ div.center {
     padding-bottom: 160px;
   }
 }
-@media screen and (max-width:405px) {
+@media screen and (max-width:410px) {
  
   #button-container {
     margin: 30px auto;
@@ -833,7 +833,9 @@ div.center {
   #social-media-handles * {
     font-size: 2rem;
   }
-  
+  .layer {
+    bottom: 23.7%;
+  }
 }
 @media screen and (max-width:370px) {
   .layer {
