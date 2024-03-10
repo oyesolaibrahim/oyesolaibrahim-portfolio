@@ -849,6 +849,9 @@ div.center {
     font-size: 0.7rem;
     min-width: 130px;
   }
+  .layer {
+    bottom: 14%;
+  }
 }
 @media screen and (max-width:410px) {
  
