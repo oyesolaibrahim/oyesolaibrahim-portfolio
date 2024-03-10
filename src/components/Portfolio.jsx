@@ -4,6 +4,7 @@ import tipCalculatorImage from "../assets/desktop-design-completed.jpg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTheme } from "./ThemeMode";
+import shortenImage from "../assets/shorten.jpg"
 
 const Portfolio = () => {
 
@@ -146,7 +147,17 @@ return (
                     <a href="https://sunny-side-project-jexg.vercel.app/" target="_blank" rel="noreferrer"><i class="fa fa-external-link" aria-hidden="true"></i>
                     </a>
                 </div>
-                <p>HTML, CSS, JavaScript</p>
+                <p className="article-p">HTML, CSS, JavaScript</p>
+            </article>
+            <article className="portfolio column">
+            <img src={shortenImage} alt=""/>
+                <div className="layer">
+                    <h3>URL shortening API landing page</h3>
+                    <p>Integrate with the Clean URI link shortening API and play with browser storage in this landing page challenge.</p>
+                    <a href="https://url-shortening-api-landing-page-liard.vercel.app/" target="_blank" rel="noreferrer"><i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p className="article-p">HTML, Tailwind, JavaScript</p>
             </article>
             <article className="portfolio column">
                 <img src={tipCalculatorImage} alt=""/>
@@ -156,36 +167,33 @@ return (
                     <a href="https://tip-calculator-app-psi-ebon.vercel.app/" target="_blank" rel="noreferrer"><i class="fa fa-external-link" aria-hidden="true"></i>
                     </a>
                 </div>
-                <p>HTML, CSS, JavaScript</p>
+                <p className="article-p">HTML, CSS, JavaScript</p>
             </article>
-            <article className="portfolio">
+            <article className="portfolio column">
                 <img src={profileImage} alt=""/>
             </article>
-            <article className="portfolio">
+            <article className="portfolio column">
                 <img src={profileImage} alt=""/>
             </article>
-            <article className="portfolio">
+            <article className="portfolio column">
                 <img src={profileImage} alt=""/>
             </article>
-            <article className="portfolio">
+            <article className="portfolio column">
                 <img src={profileImage} alt=""/>
             </article>
-            <article className="portfolio">
+            <article className="portfolio column">
                 <img src={profileImage} alt=""/>
             </article>
-            <article className="portfolio">
+            <article className="portfolio column">
                 <img src={profileImage} alt=""/>
             </article>
-            <article className="portfolio">
+            <article className="portfolio column">
                 <img src={profileImage} alt=""/>
             </article>
-            <article className="portfolio">
+            <article className="portfolio column">
                 <img src={profileImage} alt=""/>
             </article>
-            <article className="portfolio">
-                <img src={profileImage} alt=""/>
-            </article>
-            <article className="portfolio">
+            <article className="portfolio column">
                 <img src={profileImage} alt=""/>
             </article>
 
