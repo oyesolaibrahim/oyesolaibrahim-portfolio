@@ -149,18 +149,14 @@ const About = () => {
                             <div>
                                 <div className="flex flex-ul">
                                     <ul id="ul-1">
-                                        <div className="details">
+                                        {/*<div className="details">
                                             <li class="h3">Website:</li>
                                             <li><a href="#" id="click-here">Click Here</a></li>
                                         </div>
                                         <div className="details">
                                             <li class="h3">Degree:</li>
                                             <li>BSC</li>
-                                        </div>
-                                        <div className="details">
-                                             <li class="h3">Country:</li>
-                                            <li>Nigeria</li>
-                                        </div>
+                                        </div>*/}
                                     </ul>
                                     <ul id="ul-2">
                                         <div className="details email">
@@ -176,11 +172,16 @@ const About = () => {
                                              <li className="h3">Freelance:</li>
                                             <li>Available</li>
                                         </div>
+                                        <div className="details">
+                                             <li class="h3">Country:</li>
+                                            <li>Nigeria</li>
+                                        </div>
                                     </ul>
                                 </div>
                                 <div id="button-container">
                                     <a style={{backgroundColor: theme.buttonBackgroundColor}} class="button" href="assets/profilep.jpg" download="oyesolaCV">Download CV</a>
-                                    <a style={{backgroundColor: theme.buttonBackgroundColor}} class="button" href="contact.html">Hair Me</a>
+                                    {/*<a style={{backgroundColor: theme.buttonBackgroundColor}} class="button" href="/Contact">Connect</a>*/}
+                                    <Link style={{backgroundColor: theme.buttonBackgroundColor}} class="button" to="/Contact">Connect</Link>
                                 </div>
                             </div>
                             <div id="technologies">
@@ -191,7 +192,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3>CSS/SASS</h3>
+                                    <h3>CSS/SCSS</h3>
                                     <div id="css-level" style={{ backgroundColor: theme.technologiesBackgroundColor, border: theme.technologiesBorder}}>
                                         <div id="css-percentage" style={{backgroundColor: theme.technologiesPercentagesBackgroundColor}}></div>
                                     </div>
