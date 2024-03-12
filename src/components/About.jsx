@@ -148,16 +148,16 @@ const About = () => {
                         <div className="flex-start column2">
                             <div>
                                 <div className="flex flex-ul">
-                                    <ul id="ul-1">
-                                        {/*<div className="details">
+                                    {/*<ul id="ul-1">
+                                        <div className="details">
                                             <li class="h3">Website:</li>
                                             <li><a href="#" id="click-here">Click Here</a></li>
                                         </div>
                                         <div className="details">
                                             <li class="h3">Degree:</li>
                                             <li>BSC</li>
-                                        </div>*/}
-                                    </ul>
+                                        </div>
+                                    </ul>*/}
                                     <ul id="ul-2">
                                         <div className="details email">
                                             <li className="h3">Email:</li>
@@ -177,11 +177,6 @@ const About = () => {
                                             <li>Nigeria</li>
                                         </div>
                                     </ul>
-                                </div>
-                                <div id="button-container">
-                                    <a style={{backgroundColor: theme.buttonBackgroundColor}} class="button" href="assets/profilep.jpg" download="oyesolaCV">Download CV</a>
-                                    {/*<a style={{backgroundColor: theme.buttonBackgroundColor}} class="button" href="/Contact">Connect</a>*/}
-                                    <Link style={{backgroundColor: theme.buttonBackgroundColor}} class="button" to="/Contact">Connect</Link>
                                 </div>
                             </div>
                             <div id="technologies">
@@ -217,6 +212,11 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
+                                <div id="button-container" className="button-about">
+                                    <a style={{backgroundColor: theme.buttonBackgroundColor}} class="button" href="assets/profilep.jpg" download="oyesolaCV">Download CV</a>
+                                    {/*<a style={{backgroundColor: theme.buttonBackgroundColor}} class="button" href="/Contact">Connect</a>*/}
+                                    <Link style={{backgroundColor: theme.buttonBackgroundColor}} class="button" to="/Contact">Connect</Link>
+                                </div>
                     </article>
                 </section>
             </main>

@@ -440,7 +440,7 @@ article.portfolio img {
   width: 90.5%;
   height: 0vh;
   position: absolute;
-  bottom: 9.4%;
+  bottom: 10.3%;
   left: 5%;
   overflow: hidden;
   display: flex;
@@ -860,8 +860,12 @@ div.center {
     display: flex;
     flex-direction: column;
   }
+
   #button-container * {
     margin: 10px auto;
+  }
+  .button-about {
+    flex-direction: row;
   }
   #social-media-handles {
     margin-left: 22.5%;
