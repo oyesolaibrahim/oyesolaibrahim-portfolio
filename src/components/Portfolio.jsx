@@ -153,7 +153,7 @@ return (
             <img src={shortenImage} alt=""/>
                 <div className="layer">
                     <h3>URL shortening API landing page</h3>
-                    <p>Integrate with the Clean URI link shortening API and play with browser storage in this landing page challenge.</p>
+                    <p>It allow users to convert long URLs into shorter ones that are easier to share and manage.</p>
                     <a href="https://url-shortening-api-landing-page-liard.vercel.app/" target="_blank" rel="noreferrer"><i class="fa fa-external-link" aria-hidden="true"></i>
                     </a>
                 </div>
