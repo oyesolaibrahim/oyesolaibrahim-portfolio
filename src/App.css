@@ -889,6 +889,10 @@ div.center {
     min-width: 80px;
     margin-left: 10px  
   }
+  
+  .layer {
+    bottom: 10.5%;
+  }
 }
 @media screen and (max-width:350px) {
   
