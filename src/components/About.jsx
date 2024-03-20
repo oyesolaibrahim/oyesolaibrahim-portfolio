@@ -115,20 +115,21 @@ const About = () => {
                         <hr id="hr-2"/>
                     </div>
                     <div>
-                    <i className="fa fa-cog fa-2x theme-img" id={settingsClose && "theme-img"} onClick={settingsClick}></i>
+                        <i className="fa fa-cog fa-2x theme-img" id={settingsClose && "theme-img"} onClick={settingsClick}></i>
 
-                    <i id={timesOpen && "theme-img2"} className="fa fa-times fa-2x theme-img" onClick={timesClick}></i>
-
-                    <div id={themeDivOpen && "open"} className="theme-div">
-                        <div onClick={Red} className="color-selecion one"></div>
-
-                        <div onClick={Brown} className="color-selecion two"></div>
-
-                        <div onClick={Blue} className="color-selecion three"></div>
-
-                        <div onClick={Purple} className="color-selecion four"></div>
-                    </div>
-                     </div>
+ 
+                        <i id={timesOpen && "theme-img2"} className="fa fa-times fa-2x theme-img" onClick={timesClick}></i>
+          
+                        <div id={themeDivOpen && "open"} className="theme-div">
+                            <div onClick={Red} className="color-selecion one"></div>
+                  
+                            <div onClick={Brown} className="color-selecion two"></div>
+                       
+                            <div onClick={Blue} className="color-selecion three"></div>
+                            
+                            <div onClick={Purple} class="color-selecion four"></div>
+                        </div>
+                      </div>
                 </header>
         
                 <section className="">

@@ -319,15 +319,6 @@ transform: translateY(10px);
   /*animation: 10s ease 0s 1 slideInLeft3*/
   animation: ping 1s cubic-bezier(0.25, 0.1, 0.25, 0.1) 1;  
 }
-/*
-@keyframes slideInLeft3 {
-  0% {
-    transform: translateX(10%);
-  }
-  10% {
-    transform: translateX(0);
-  }
-}*/
 @keyframes ping {
   0%, 100% {
     transform: scale(1);
@@ -339,7 +330,7 @@ transform: translateY(10px);
 
 /*--------About Me Page---------*/
 
-#about-me-main * {
+#about-me-main section {
   animation: 1s ease 0.3s 1 slideInLeft4;
 }
 @keyframes slideInLeft4 {
