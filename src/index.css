@@ -641,6 +641,12 @@ div.center {
     margin-right:   100px;
   } 
 }
+
+@media screen and (max-width:840px){
+  article.portfolio .layer p.article-p {
+    font-size: 0.5rem;
+  }
+}
 @media screen and (max-width:630px){
 
   article.portfolio img {
