@@ -898,9 +898,3 @@ div.center {
 @media screen and (max-width:345px) {
   
 }
-@media screen and (min-width:200px) and (max-height:700px) {
-
-  .layer {
-    bottom: 24%;
-  }
-}
