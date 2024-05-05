@@ -12,7 +12,7 @@ const Index = () => {
     return (
         <div>
             <Nav_desktop/>
-            <main className="index-main" style={{backgroundColor: theme.mainBackgroundColor}}>
+            <main className="index" style={{backgroundColor: theme.mainBackgroundColor}}>
             <header className="flex">
                     <div className="header-div">
                         <h1>Home</h1>

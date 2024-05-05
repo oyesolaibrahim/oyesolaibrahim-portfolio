@@ -1143,3 +1143,13 @@ div.center {
     top: 52.2%;
   }
 }
+@media screen and (min-height:1200px) {
+  .index {
+    height: 100vh;
+  }
+}
+@media screen and (min-width:1280px) and (min-height:800px) {
+  .index {
+    height: 100vh;
+  }
+}
