@@ -49,7 +49,7 @@ const Index = () => {
                         <a href="https://github.com/dashboard" target="_blank" rel="noreferrer"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
                     </div>
                 </article>
-                <img id="profile-img" src={profileImage} alt="my-logo"/>
+                <img id="profile-img" className="popUp" src={profileImage} alt="my-logo"/>
             </section>
             </main>
             <Nav_mobile/> 

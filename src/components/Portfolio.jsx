@@ -24,7 +24,7 @@ return (
             <Theme/>
         </header>
 
-        <section className="flex wrap">
+        <section className="flex wrap popUp">
             <article className="portfolio column">
                 <img src={sunnySideImage} alt=""/>
                <div className="layer">

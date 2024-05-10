@@ -44,6 +44,7 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 main {
   min-height: 100vh;
 }
@@ -319,15 +320,19 @@ transform: translateY(10px);
   border-radius: 50%;
   margin-right: 100px;
   /*animation: 10s ease 0s 1 slideInLeft3*/
-  animation: ping 1s cubic-bezier(0.25, 0.1, 0.25, 0.1) 1;  
-}
-@keyframes ping {
-  0%, 100% {
+  }
+  .popUp {
+    animation: popUp 4s ease forwards;
+  }  
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
     transform: scale(1);
-    opacity: 0;
   }
 }
-
 
 
 /*--------About Me Page---------*/
