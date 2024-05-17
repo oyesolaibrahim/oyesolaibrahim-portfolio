@@ -38,6 +38,7 @@ body {
   /*margin: 50px;*/
   color: white;
   position: relative;
+  overflow-x: hidden;
 }
 
 /* width */
@@ -404,7 +405,7 @@ h1 {
   width: 70%;
 }
 #react-percentage { 
-  width: 50%;
+  width: 75%;
 }
 #express-percentage {
   width: 65%;
@@ -531,7 +532,7 @@ div.center {
   font-weight: 700;
   margin-top: 20px;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .nav2 {
   display: none;

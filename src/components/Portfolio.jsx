@@ -80,6 +80,7 @@ return (
             </article>
             <article className="portfolio column">
                 <img src={profileImage} alt=""/>
+                {/*<p>Built using Expres.js to handle routing and middleware and EJS was utilized as the template engine for generating HTML content </p>*/}
             </article>
             <article className="portfolio column">
                 <img src={profileImage} alt=""/>

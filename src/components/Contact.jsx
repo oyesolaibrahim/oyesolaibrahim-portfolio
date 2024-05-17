@@ -38,10 +38,10 @@ const handleSubmit = async (e) => {
 
       if (response.ok) {
         setMsgDelivered('Message sent successfully!!!');
-        setTimeout(() => {
-          setMsgDelivered('');
-        }, 5000);
-        form.reset();
+        //setTimeout(() => {
+        //  setMsgDelivered('');
+        //}, 10000);
+        //form.reset();
       } else {
         throw new Error('Failed to send message');
       }
@@ -148,7 +148,7 @@ const handleSubmit = async (e) => {
                                 <button style={{backgroundColor: theme.h3BackgroundColor }} className="send" id="submit">Send</button>
                             </form>
                             <span id="msgDelivered" className="center">
-                            {msgDelivered}
+                              {msgDelivered}
                             </span>
                         </div>
                     </div>
